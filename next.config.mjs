@@ -1,12 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    remotePatterns: [
+  async rewrites() {
+    return [
       {
-        protocol: 'https',
-        hostname: 'minotar.net'
-      }
+        source: '/bans',
+        destination: '/bans.html',
+      },
     ]
   }
-};
-export default nextConfig;
+}
