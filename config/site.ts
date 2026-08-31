@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: "Next Litebans",
+  title: "BlitZNet Network",
   logo: "/logo.webp",
   favicon: "/logo.webp",
   languages: {
