@@ -36,13 +36,13 @@ export async function generateMetadata({ params }: { params: { player: string } 
   const muteCount = await getPlayerMuteCount(player.uuid!);
   const warnCount = await getPlayerWarnCount(player.uuid!);
   const kickCount = await getPlayerKickCount(player.uuid!);
-  
+
   return {
     title: p(dictionary.pages.playerHistory.title, {
       player: params.player.replace("%40", '')
     }),
     openGraph: {
-      images: `https://minotar.net/helm/${player.uuid}`,
+      images: `${process.env.NEXT_PUBLIC_AVATAR_URL}${player.uuid}`,
       description: p(siteConfig.openGraph.pages.player.description, {
         name: player.name,
         bans: banCount,
@@ -86,7 +86,7 @@ export default async function History({
       <div className="space-y-2 md:flex md:space-x-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
-          src={`https://visage.surgeplay.com/bust/512/${getSkinUUID(playerName, player.uuid!)}`} 
+          src={`${process.env.NEXT_PUBLIC_VZGEBUST_URL}${getSkinUUID(playerName, player.uuid!)}`} 
           alt={playerName}
           width={192}
           height={192}

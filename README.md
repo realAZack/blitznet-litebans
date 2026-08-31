@@ -1,11 +1,11 @@
 <div align="center">
-  <img style="width:100px;" src="https://cdn.yosoyvillaa.dev/uploads/next-litebans.png" alt="MelodyMine Logo">
+  <img style="width:100px;" src="docs/images/next-litebans.png" alt="MelodyMine Logo">
 
   <h1 style="font-size: 38px">next-litebans </h1>
 
   A web interface for [LiteBans](https://www.spigotmc.org/resources/litebans.3715/), built on top of:
 
-  [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/) [![Prisma](https://img.shields.io/badge/Prisma-black?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io/) [![shadcn/ui](https://cdn.yosoyvillaa.dev/uploads/shadcn.svg)](https://ui.shadcn.com/)
+  [![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/) [![Prisma](https://img.shields.io/badge/Prisma-black?style=for-the-badge&logo=prisma&logoColor=white)](https://prisma.io/) [![shadcn/ui](docs/images/shadcn.svg)](https://ui.shadcn.com/)
 </div>
 
 ## 👾 Demo
@@ -23,14 +23,15 @@ _P.D: All punishments in the demo are randomly added to the database with a list
 
 ### Installation
 
-1. Clone the repository with `git clone https://github.com/YoSoyVillaa/next-litebans.git`
+1. Clone the repository with `git clone https://github.com/EarlyDreamLand/next-litebans.git`
 2. Install the dependencies with `npm install`
 3. Copy the `.env.example` file to `.env` and fill in the required fields. For help [check this](#database-url)
 4. If you are using PostgreSQL, check [PostgresSQL Configuration](#PostgresSQL-Configuration)
 5. Config the website ([configuration](#%EF%B8%8F-configuration))
-6. Run `npm run setup:db:generate` to generate the Prisma client
-7. Run `npm run build` to build the project
-8. Run `npm run start` to start the server
+6. Run `npm run setup:db:schema` to generate the database schema
+7. Run `npm run setup:db:generate` to generate the Prisma client
+8. Run `npm run build` to build the project
+9. Run `npm run start` to start the server
 
 ### Database URL
 
@@ -38,7 +39,7 @@ You will need to set the `DATABASE_URL` environment variable in the `.env` file.
 
 #### MySQL URL Configuration
 
-![MySQL](https://cdn.yosoyvillaa.dev/uploads/mysql.png)
+![MySQL](docs/images/mysql.png)
 
 ```env
 DATABASE_URL="mysql://user:password@host:port/database"
@@ -46,7 +47,7 @@ DATABASE_URL="mysql://user:password@host:port/database"
 
 #### PostgreSQL URL Configuration
 
-![PostgreSQL](https://cdn.yosoyvillaa.dev/uploads/postgresql.png)
+![PostgreSQL](docs/images/postgresql.png)
 
 ```env
 DATABASE_URL="postgresql://user:password@host:port/database?schema=public"
