@@ -2,12 +2,12 @@
   "name": "next-litebans",
   "version": "0.1.0",
   "private": true,
-  "scripts": {
+"scripts": {
     "dev": "next dev",
     "build": "next build",
-    "bundle": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
-    "deploy": "npm run build && npm run bundle && opennextjs-cloudflare deploy",
-    "preview": "npm run build && npm run bundle && opennextjs-cloudflare preview",
+    "bundle": "npx opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
+    "deploy": "npm run build && npm run bundle && npx opennextjs-cloudflare deploy",
+    "preview": "npm run build && npm run bundle && npx opennextjs-cloudflare preview",
     "start": "next start",
     "lint": "next lint",
     "setup:db:generate": "prisma generate",
