@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/bans',
+  trailingSlash: true,
   images: {
     remotePatterns: [
       {
@@ -9,5 +11,4 @@ const nextConfig = {
     ]
   }
 };
-
 export default nextConfig;
