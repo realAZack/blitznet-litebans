@@ -5,8 +5,9 @@
   "scripts": {
     "dev": "next dev",
 	"build": "next build",
-	"deploy": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && opennextjs-cloudflare deploy",
-	"preview": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && opennextjs-cloudflare preview",
+	"bundle": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
+	"deploy": "npm run build && npm run bundle && opennextjs-cloudflare deploy",
+	"preview": "npm run build && npm run bundle && opennextjs-cloudflare preview",
     "start": "next start",
     "lint": "next lint",
     "setup:db:generate": "prisma generate",
