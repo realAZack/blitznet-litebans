@@ -10,7 +10,6 @@ const getSkinUUID = (playername: string, uuid: string) => {
   return uuid;
 }
 
-const escapeRegExp = (str: string) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const bedrockPrefixRegex = new RegExp(`^${escapeRegExp(siteConfig.bedrock.prefix)}`);
+const bedrockPrefixRegex = new RegExp(`^${siteConfig.bedrock.prefix}`);
 
 export { getSkinUUID, bedrockPrefixRegex }

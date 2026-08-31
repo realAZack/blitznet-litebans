@@ -1,30 +1,41 @@
 import { cache } from "react";
-import { unstable_cache } from "next/cache";
 
 import { siteConfig } from "@config/site";
 import { PunishmentListItem } from "@/types";
 
 import { db } from "../db";
-import { getPlayerNamesBatch } from "./punishment";
+import { getPlayerName } from "./punishment";
 
-const getWarnCountCached = unstable_cache(
-  async (player: string | null, staff: string | null) => {
-    return db.warnings.count({
-      where: {
-        uuid: player ?? undefined,
-        banned_by_uuid: staff ?? undefined
-      }
-    });
-  },
-  ["warn-count"],
-  { revalidate: 900 }
-);
+const warnCountCache = new Map();
+const WARN_CACHE_TTL = 15 * 60 * 1000; // 15 min
 
-const getWarnCount = (player?: string, staff?: string) =>
-  getWarnCountCached(player ?? null, staff ?? null);
+const getWarnCount = async (player?: string, staff?: string, useCache: boolean = true) => {
+  const cacheKey = `${player || 'null'}_${staff || 'null'}`;
+
+  if (useCache) {
+    const cached = warnCountCache.get(cacheKey);
+    if (cached && (Date.now() - cached.timestamp) < WARN_CACHE_TTL) {
+      return cached.data;
+    }
+  }
+
+  const count = await db.litebans_warnings.count({
+    where: {
+      uuid: player,
+      banned_by_uuid: staff
+    }
+  });
+
+  warnCountCache.set(cacheKey, {
+    data: count,
+    timestamp: Date.now()
+  });
+
+  return count;
+}
 
 const getWarns = async (page: number, player?: string, staff?: string) => {
-  const warns =  await db.warnings.findMany({
+  const warns =  await db.litebans_warnings.findMany({
     where: {
       uuid: player,
       banned_by_uuid: staff
@@ -51,11 +62,9 @@ const getWarns = async (page: number, player?: string, staff?: string) => {
 }
 
 const sanitizeWarns = async (warns: (PunishmentListItem & { warned: boolean | string})[]) => {
-  const uuids = warns.map(w => w.uuid).filter((u): u is string => !!u);
-  const nameMap = await getPlayerNamesBatch(uuids);
 
-  const sanitized = warns.map((warn) => {
-    const name = nameMap.get(warn.uuid!);
+  const sanitized = await Promise.all(warns.map(async (warn) => {
+    const name = await getPlayerName(warn.uuid!);
     return {
       ...warn,
       id: warn.id.toString(),
@@ -65,13 +74,13 @@ const sanitizeWarns = async (warns: (PunishmentListItem & { warned: boolean | st
       warned: typeof warn.warned === "boolean" ? warn.warned : warn.warned === "1",
       name
     }
-  });
+  }));
 
   return sanitized;
 }
 
 const getWarn = async (id: number) => {
-  const warn = await db.warnings.findUnique({
+  const warn = await db.litebans_warnings.findUnique({
     where: {
       id
     },

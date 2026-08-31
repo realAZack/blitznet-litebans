@@ -1,15 +1,15 @@
 const language = {
   info: {
-    country_code: "CN",
-    lang_name: "简体中文"
+    country_code: "HK",
+    lang_name: "繁體中文(香港)"
   },
   site: {
-    description: "BlitZNet服务器违规查询界面。一键查询玩家封禁、警告、踢出与禁言历史。规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验。"
+    description: "BlitZNet伺服器違規查詢介面。一鍵查詢玩家封鎖、警告、踢出與禁言紀錄。規則清晰, 執行透明, 致力保障所有玩家的公平遊戲體驗。"
   },
   words: {
     bans: {
-      singular: "封禁",
-      plural: "封禁"
+      singular: "封鎖",
+      plural: "封鎖"
     },
     mutes: {
       singular: "禁言",
@@ -26,66 +26,66 @@ const language = {
     yes: "是",
     no: "否",
     player: "玩家",
-    staff: "管理",
+    staff: "管理員",
     reason: "原因",
     date: "日期",
-    expires: "失效时间",
-    originServer: "来源服务器",
+    expires: "到期時間",
+    originServer: "來源伺服器",
     notified: "通知",
   },
   pages: {
     home: {
-      title: "首页 | BlitZNet Network",
+      title: "首頁 | BlitZNet Network",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
-      subtitle: "一键查询玩家封禁、警告、踢出与禁言历史。规则清晰，执行透明，致力保障所有玩家的公平游戏体验。"
+      subtitle: "一鍵查詢玩家封鎖、警告、踢出與禁言紀錄。規則清晰，執行透明，致力保障所有玩家的公平遊戲體驗。"
     },
     history: {
-      title: "处罚历史",
+      title: "處罰紀錄",
       // Placeholders: {total}
-      subtitle: "总处罚数: {total}",
+      subtitle: "總處罰數: {total}",
       table: {
         heads: {
-          type: "类型",
+          type: "類型",
           player: "玩家",
-          by: "处理",
+          by: "執行",
           reason: "原因",
           date: "日期",
-          expires: "失效时间"
+          expires: "到期時間"
         },
-        permanent: "永久封禁",
+        permanent: "永久封鎖",
         expire_not_applicable: "N/A",
         active: {
-          true: "生效",
-          temporal: "临时",
-          false: "失效"
+          true: "生效中",
+          temporal: "暫時",
+          false: "已到期"
         }
       }
     },
     bans: {
-      title: "封禁",
+      title: "封鎖",
       // Placeholders: {total}
-      subtitle: "封禁数量: {total}",
+      subtitle: "封鎖數量: {total}",
       table: {
         heads: {
           player: "玩家",
-          by: "处理",
+          by: "執行",
           reason: "原因",
           date: "日期",
-          expires: "失效时间"
+          expires: "到期時間"
         },
-        permanent: "永久封禁",
+        permanent: "永久封鎖",
         active: {
-          true: "生效",
-          temporal: "临时",
-          false: "失效"
+          true: "生效中",
+          temporal: "暫時",
+          false: "已到期"
         }
       },
       info: {
-        title: "封禁 #{id}",
+        title: "封鎖 #{id}",
         badges: {
-          ipban: "IP封禁",
-          active: "生效",
-          expired: "失效",
+          ipban: "IP封鎖",
+          active: "生效中",
+          expired: "已到期",
           permanent: "永久",
         }
       }
@@ -93,28 +93,28 @@ const language = {
     mutes: {
       title: "禁言",
       // Placeholders: {total}
-      subtitle: "禁言数量: {total}",
+      subtitle: "禁言數量: {total}",
       table: {
         heads: {
           player: "玩家",
-          by: "处理",
+          by: "執行",
           reason: "原因",
           date: "日期",
-          expires: "失效时间"
+          expires: "到期時間"
         },
         permanent: "永久禁言",
         active: {
-          true: "生效",
-          temporal: "临时",
-          false: "失效"
+          true: "生效中",
+          temporal: "暫時",
+          false: "已到期"
         }
       },
       info: {
         title: "禁言 #{id}",
         badges: {
           ipmute: "IP禁言",
-          active: "生效",
-          expired: "失效",
+          active: "生效中",
+          expired: "已到期",
           permanent: "永久",
         }
       }
@@ -122,11 +122,11 @@ const language = {
     warns: {
       title: "警告",
       // Placeholders: {total}
-      subtitle: "警告数量: {total}",
+      subtitle: "警告數量: {total}",
       table: {
         heads: {
           player: "玩家",
-          by: "处理",
+          by: "執行",
           reason: "原因",
           date: "日期",
           notified: "通知"
@@ -139,11 +139,11 @@ const language = {
     kicks: {
       title: "踢出",
       // Placeholders: {total}
-      subtitle: "踢出数量: {total}",
+      subtitle: "踢出數量: {total}",
       table: {
         heads: {
           player: "玩家",
-          by: "处理",
+          by: "執行",
           reason: "原因",
           date: "日期"
         }
@@ -159,21 +159,20 @@ const language = {
     errors: {
       notFound: {
         title: "404",
-        description: "你似乎迷路了。请返回主页。",
-        button: "返回主页"
+        description: "你好像走錯路了。請返回首頁。",
+        button: "返回首頁"
       }
     }
   },
   pagination: {
-    previous: "上一页",
-    next: "下一页"
+    previous: "上一頁",
+    next: "下一頁"
   },
   notifications: {
     playerNotFound: {
-      title: "错误",
-      description: "数据库中不存在该玩家。",
+      title: "錯誤",
+      description: "資料庫中沒有該玩家。",
     }
   }
 }
-
 module.exports = language;
