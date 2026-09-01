@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { SearchParams } from "@/types";
 import { siteConfig } from "@config/site";
 import p from "@/lib/language/utils/parse";

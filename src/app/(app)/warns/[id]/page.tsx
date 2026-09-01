@@ -1,3 +1,5 @@
+export const runtime = 'edge';
+
 import { notFound } from "next/navigation";
 
 import { IoCalendar } from "react-icons/io5";
