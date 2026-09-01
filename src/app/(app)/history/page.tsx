@@ -1,5 +1,3 @@
-export const runtime = 'edge';
-
 import { SearchParams } from "@/types";
 import p from "@/lib/language/utils/parse";
 import { language } from "@/lib/language/dictionaries";
