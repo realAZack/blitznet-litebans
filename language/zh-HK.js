@@ -4,7 +4,7 @@ const language = {
     lang_name: "繁體中文(香港)"
   },
   site: {
-    description: "BlitZNet Network違規查詢介面<br>一鍵查詢玩家封鎖、警告、驅逐與靜音紀錄<br>規則清晰，執行透明，致力保障所有玩家嘅公平遊戲體驗"
+    description: "BlitZNet Network 違規查詢介面。一鍵查詢玩家封鎖、警告、驅逐與靜音紀錄。規則清晰，執行透明，致力保障所有玩家嘅公平遊戲體驗。"
   },
   words: {
     bans: {
@@ -36,7 +36,7 @@ const language = {
   pages: {
     home: {
       title: "封神榜 | BlitZNet Network",
-      subtitle: "一鍵查詢玩家封鎖、警告、驅逐與靜音紀錄。規則清晰，執行透明，致力保障所有玩家嘅公平遊戲體驗"
+      subtitle: "一鍵查詢玩家封鎖、警告、驅逐與靜音紀錄<br>規則清晰，執行透明，致力保障所有玩家嘅公平遊戲體驗"
     },
     history: {
       title: "處罰紀錄",

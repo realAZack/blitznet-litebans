@@ -4,7 +4,7 @@ const language = {
     lang_name: "简体中文"
   },
   site: {
-    description: "BlitZNet Network违规查询界面<br>一键查询玩家封禁、警告、踢出与禁言历史<br>规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验"
+    description: "BlitZNet Network 违规查询界面。一键查询玩家封禁、警告、踢出与禁言历史。规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验。"
   },
   words: {
     bans: {
@@ -36,7 +36,7 @@ const language = {
   pages: {
     home: {
       title: "封神榜 | BlitZNet Network",
-      subtitle: "一键查询玩家封禁、警告、踢出与禁言历史。规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验"
+      subtitle: "一键查询玩家封禁、警告、踢出与禁言历史<br>规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验"
     },
     history: {
       title: "处罚记录",

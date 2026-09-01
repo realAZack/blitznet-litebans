@@ -4,7 +4,7 @@ const language = {
     lang_name: "English"
   },
   site: {
-    description: "BlitZNet Network Violation Inquiry Interface<br>One-click query for player bans, warnings, kicks and mute records<br>Clear rules, transparent enforcement, committed to providing a fair gaming experience for all players"
+    description: "BlitZNet Network Violation Inquiry Interface. One-click query for player bans, warnings, kicks and mute records. Clear rules, transparent enforcement, committed to providing a fair gaming experience for all players."
   },
   words: {
     bans: {
@@ -37,7 +37,7 @@ const language = {
     home: {
       title: "Ban List | BlitZNet Network",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
-      subtitle: "Welcome to Litebans Web Interface!"
+      subtitle: "BlitZNet Network Violation Inquiry Interface. One-click query for player bans, warnings, kicks and mute records. Clear rules, transparent enforcement, committed to providing a fair gaming experience for all players."
     },
     history: {
       title: "History",

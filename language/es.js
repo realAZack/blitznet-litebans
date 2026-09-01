@@ -4,7 +4,7 @@ const language = {
     lang_name: "Español"
   },
   site: {
-    description: "Interfaz de consulta de infracciones de BlitZNet Network<br>Consulta con un clic el historial de baneos, advertencias, expulsiones y silencios de jugadores<br>Reglas claras, ejecución transparente, comprometidos con brindar una experiencia de juego justa para todos los jugadores"
+    description: "Interfaz de consulta de infracciones de BlitZNet Network. Consulta con un clic el historial de baneos, advertencias, expulsiones y silencios de jugadores. Reglas claras, ejecución transparente, comprometidos con brindar una experiencia de juego justa para todos los jugadores."
   },
   words: {
     bans: {

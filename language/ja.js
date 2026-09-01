@@ -4,7 +4,7 @@ const language = {
     lang_name: "日本語"
   },
   site: {
-    description: "BlitZNet Network違反履歴照会インターフェース<br>プレイヤーのBAN、警告、キック、ミュート履歴を一括検索<br>ルールを明確に、処罰を透明化し、全プレイヤーに公平なゲーム環境を提供します"
+    description: "BlitZNet Network 違反履歴照会インターフェース。プレイヤーのBAN、警告、キック、ミュート履歴を一括検索。ルールを明確に、処罰を透明化し、全プレイヤーに公平なゲーム環境を提供します。"
   },
   words: {
     bans: {
@@ -36,7 +36,7 @@ const language = {
   pages: {
     home: {
       title: "封神榜 | BlitZNet Network",
-      subtitle: "プレイヤーのBAN、警告、キック、ミュート履歴を一括検索。ルールを明確に、処罰を透明化し、全プレイヤーに公平なゲーム環境を提供します"
+      subtitle: "プレイヤーのBAN、警告、キック、ミュート履歴を一括検索<br>ルールを明確に、処罰を透明化し、全プレイヤーに公平なゲーム環境を提供します"
     },
     history: {
       title: "処罰履歴",
