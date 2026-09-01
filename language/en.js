@@ -4,7 +4,7 @@ const language = {
     lang_name: "English"
   },
   site: {
-    description: "A simple and lightweight Litebans web interface."
+    description: "BlitZNet Network Violation Inquiry Interface<br>One-click query for player bans, warnings, kicks and mute records<br>Clear rules, transparent enforcement, committed to providing a fair gaming experience for all players"
   },
   words: {
     bans: {
@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "Home",
+      title: "Ban List | BlitZNet Network",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
       subtitle: "Welcome to Litebans Web Interface!"
     },

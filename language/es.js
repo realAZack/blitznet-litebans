@@ -4,7 +4,7 @@ const language = {
     lang_name: "Español"
   },
   site: {
-    description: "Una interfaz web simple para LiteBans."
+    description: "Interfaz de consulta de infracciones de BlitZNet Network<br>Consulta con un clic el historial de baneos, advertencias, expulsiones y silencios de jugadores<br>Reglas claras, ejecución transparente, comprometidos con brindar una experiencia de juego justa para todos los jugadores"
   },
   words: {
     bans: {
@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "Inicio",
+      title: "Lista de Sanciones | BlitZNet Network",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
       subtitle: "¡Bienvenido a la interfaz web de Litebans!"
     },

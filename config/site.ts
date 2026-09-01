@@ -1,22 +1,26 @@
 export const siteConfig = {
-  title: "Next Litebans",
+  title: "BlitZNet Network",
   logo: "/logo.webp",
   favicon: "/logo.webp",
   languages: {
     available: [
+	  "zh-CN",
+	  "zh-HK",
+	  "zh-TW",
+	  "ja",
       "en",
       "es",
     ],
-    default: "en",
+    default: "zh-CN",
   },
   console: {
-    name: "Console", // Just for filter badge
-    uuid: "[Console]", // Use for filter url and to check if a punishment is made from the Console. In some versions of Litebans, the console uuid is "CONSOLE".
+    name: "BlitZNet", // Just for filter badge
+    uuid: "CONSOLE", // Use for filter url and to check if a punishment is made from the Console. In some versions of Litebans, the console uuid is "CONSOLE".
     icon: "/console.webp",
     body: "/console-body.webp",
     bust: "/console-bust.webp",
   },
-  defaultPlayerLookup: "YoSoyVilla",
+  defaultPlayerLookup: "Player",
   // When enabled, body and bust images will show a steve skin
   bedrock: {
     enabled: false,
