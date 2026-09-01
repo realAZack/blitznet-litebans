@@ -1,5 +1,5 @@
 export const siteConfig = {
-  title: "BlitZNet Network",
+  title: "",
   logo: "/logo.webp",
   favicon: "/logo.webp",
   languages: {
