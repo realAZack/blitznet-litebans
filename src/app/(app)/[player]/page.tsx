@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { siteConfig } from "@config/site";
 import p from "@/lib/language/utils/parse";
 import q from "@/lib/language/utils/quantity";
-import { getSkinUUID } from "@/utils/bedrock";
 import { language } from "@/lib/language/dictionaries";
 import { getPage, getStaff } from "@/utils/searchParams";
 import { 
@@ -20,7 +19,6 @@ import { Icons } from "@/components/layout/icons";
 import { HistoryTable } from "@/components/punishments/history/history-table";
 
 export async function generateMetadata({ params }: { params: { player: string } }) {
-  
   const { dictionary } = await language();
 
   const playerName = params.player.replace("%40", '');
@@ -42,7 +40,8 @@ export async function generateMetadata({ params }: { params: { player: string } 
       player: params.player.replace("%40", '')
     }),
     openGraph: {
-      images: `https://minotar.net/helm/${player.uuid}`,
+      // 已将 uuid 改为 playerName，解决离线模式无法加载正版皮肤的问题
+      images: `https://minotar.net/helm/${playerName}`,
       description: p(siteConfig.openGraph.pages.player.description, {
         name: player.name,
         bans: banCount,
@@ -86,7 +85,8 @@ export default async function History({
       <div className="space-y-2 md:flex md:space-x-4">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img 
-          src={`https://visage.surgeplay.com/bust/512/${getSkinUUID(playerName, player.uuid!)}`} 
+          // 已去掉原本复杂的 getSkinUUID，直接使用 playerName 请求 visage 头像
+          src={`https://visage.surgeplay.com/bust/512/${playerName}`} 
           alt={playerName}
           width={192}
           height={192}
