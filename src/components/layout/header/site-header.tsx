@@ -22,7 +22,6 @@ export const SiteHeader = async () => {
             <PlayerInput />
             <LanguageChanger dictionaries={dictionaries} />
             <ThemeToggle />
-            <GithubButton />
           </nav>
         </div>
       </div>
