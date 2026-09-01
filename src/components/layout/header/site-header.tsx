@@ -7,7 +7,6 @@ import { PlayerInput } from "@/components/input/player-lookup";
 
 import { MainNav } from "./main-nav";
 import { MobileNav } from "./mobile-nav";
-import { GithubButton } from "@/components/buttons/github-button";
 
 export const SiteHeader = async () => {
   const dictionaries = getDictionaries();
