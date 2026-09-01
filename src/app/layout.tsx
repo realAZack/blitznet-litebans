@@ -9,11 +9,11 @@ import { LanguageProvider } from "@/lib/language/components/language-provider";
 import { Toaster } from "@/components/ui/sonner";
 import { ThemeProvider } from "@/components/theme/theme-provider";
 import { SiteHeader } from "@/components/layout/header/site-header";
+import { SyncTitle } from "@/components/layout/sync-title"; // 1. 引入同步组件
 
 const inter = Inter({ subsets: ["latin"] });
 
 export async function generateMetadata() {
-  
   const { dictionary } = await language();
   
   return {
@@ -47,6 +47,9 @@ export default async function RootLayout({
           <link rel="shortcut icon" href={siteConfig.favicon} />
         </head>
         <body className={inter.className}>
+          {/* 2. 在 body 内部任意位置挂载该组件 */}
+          <SyncTitle />
+          
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
