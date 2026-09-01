@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "封神榜",
+      title: "封神榜 ",
       subtitle: "プレイヤーのBAN、警告、キック、ミュート履歴を一括検索\nルールを明確に、処罰を透明化し、全プレイヤーに公平なゲーム環境を提供します"
     },
     history: {

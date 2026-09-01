@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "Ban List",
+      title: "Ban List ",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
       subtitle: "BlitZNet Network Violation Inquiry Interface. One-click query for player bans, warnings, kicks and mute records. Clear rules, transparent enforcement, committed to providing a fair gaming experience for all players."
     },

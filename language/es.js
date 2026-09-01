@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "Lista de Sanciones",
+      title: "Lista de Sanciones ",
       // Placeholders: {total}, {bans}, {mutes}, {kicks}, {warns}
       subtitle: "¡Bienvenido a la interfaz web de Litebans!"
     },

@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "封神榜",
+      title: "封神榜 ",
       subtitle: "一键查询玩家封禁、警告、踢出与禁言历史\n规则清晰, 执行透明, 致力保障所有玩家的公平游戏体验"
     },
     history: {

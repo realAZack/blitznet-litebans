@@ -35,7 +35,7 @@ const language = {
   },
   pages: {
     home: {
-      title: "封神榜",
+      title: "封神榜 ",
       subtitle: "一鍵查詢玩家封鎖、警告、驅逐與靜音紀錄\n規則清晰，執行透明，致力保障所有玩家嘅公平遊戲體驗"
     },
     history: {
