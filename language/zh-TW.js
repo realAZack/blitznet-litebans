@@ -36,7 +36,7 @@ const language = {
   pages: {
     home: {
       title: "封神榜 | BlitZNet Network",
-      subtitle: "一鍵查詢玩家封鎖、警告、踢出與禁言紀錄<br>規則清晰，執行透明，致力保障所有玩家的公平遊戲體驗"
+      subtitle: "一鍵查詢玩家封鎖、警告、踢出與禁言紀錄\n規則清晰，執行透明，致力保障所有玩家的公平遊戲體驗"
     },
     history: {
       title: "處罰紀錄",
