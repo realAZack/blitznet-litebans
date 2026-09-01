@@ -16,7 +16,8 @@ export const PlayerAvatar = ({
   className
 }: PlayerAvatarProps) => (
   <Image 
-    src={`https://minotar.net/helm/${uuid ?? name}`}
+    // 强制直接使用 name，忽略离线 UUID，解决离线模式无法加载正版皮肤的问题
+    src={`https://minotar.net/helm/${name}`}
     alt={`${name}'s avatar`}
     width={size ?? 32}
     height={size ?? 32}
